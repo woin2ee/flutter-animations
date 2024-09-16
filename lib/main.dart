@@ -1,3 +1,4 @@
+import 'package:animations/favorite_animation_page_with_lottie.dart';
 import 'package:animations/moving_animation_page.dart';
 import 'package:animations/scale_animation_page.dart';
 import 'package:flutter/cupertino.dart';
@@ -47,6 +48,12 @@ class _MainPageState extends State<MainPage> {
       'Moving Animation',
       () => CupertinoPageRoute(
             builder: (context) => const MovingAnimationPage(title: 'Moving Animation'),
+          )
+    ),
+    (
+      'Favorite Animation With Lottie',
+      () => CupertinoPageRoute(
+            builder: (context) => const FavoriteAnimationPageWithLottie(title: 'Favorite Animation With Lottie'),
           )
     ),
   ];
